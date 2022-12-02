@@ -9,9 +9,9 @@ import {
 } from "react-icons/ai";
 import eleli from "../public/eleli_2.png";
 import Image from "next/image";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import android from "../public/android.png";
+import web from "../public/web.png";
+import db from "../public/db.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -31,7 +31,7 @@ export default function Home() {
 
       <main className="bg-white px-10 md:first-letter:px-20 lg:px-40 dark:bg-gray-900">
         <section className="  min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-12 flex justify-between md:mb-5">
             <h1 className="text-xl font-burtons dark:text-yellow-200">
               Developed by Ayub
             </h1>
@@ -54,7 +54,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
             <Image alt="" src={eleli} layout="fill" objectFit="cover" />
           </div>
           <div className="text-center p-10">
@@ -66,9 +66,9 @@ export default function Home() {
             <p className=" text-md py-5 leading-8 text-gray-800 max-w-lg mx-auto md:text-xl dark:text-stone-500">
               Hello My name is Eleli Ayub, I'm a full stack developer with
               proficient skills in React-JS, Python-Django, Node-JS, SQL,
-              MongoDB and React Native. I'm a passionate programmer who takes
-              pride in his work and can work well with teams to achieve
-              organizational goals.
+              MongoDB and React Native, Tailwind-CSS, SCSS and Next-JS. I'm a
+              passionate programmer who takes pride in his work and can work
+              well with teams to achieve organizational goals.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
@@ -91,61 +91,94 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Since the beggining of my journey as a freelance developer, I've
-              done remote work for{" "}
-              <span className=" text-teal-500"> agencies consulted </span> and
-              have collaborated with other teams in developing other projects
-              with them.
+            <h3 className="text-3xl py-1 text-center mt-10">
+              Services I offer
+            </h3>
+            <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-stone-500">
+              Since I started programming I've done{" "}
+              <a href="" className=" text-teal-500">
+                {" "}
+                Work{" "}
+              </a>
+              for a number of teams and{" "}
+              <a href="" className=" text-teal-500">
+                {" "}
+                Organizations{" "}
+              </a>{" "}
+              and I've succesifully completed these{" "}
+              <a href="" className=" text-teal-500">
+                {" "}
+                Projects{" "}
+              </a>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I offer a wide range of services includng programming and
-              teaching.
+            <p className="text-md dark:text-stone-500 text-center py-2 leading-8 text-gray-800">
+              I can confortable handle frontend, backend and databases services
+              to meet your needs.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className=" flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10">
-              <Image alt="" src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+            <div className=" flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-slate-700 dark:shadow-md hover:bg-gray-800 hover:scale-105 duration-1000">
+              <Image alt="" src={android} width={100} height={100} />
+              <h3 className="text-xl font-bold pt-8 pb-2 dark:text-gray-400">
+                Android Applications
               </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs and imlementing
-                design theory.
+              <p className="py-2 dark:text-gray-600">
+                Creating cutom and user friendly UI/UX designs for your
+                application needs.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use.</h4>
-              <p className=" text-gray-800 py-1">Figma</p>
-              <p className=" text-gray-800 py-1">Git & Github</p>
-              <p className=" text-gray-800 py-1">Illustrator</p>
+              <h4 className="py-4 text-teal-600 dark:text-teal-600">
+                Languages I use...
+              </h4>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                React Native
+              </p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Kotlin</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Flutter</p>
             </div>
-            <div className="flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10">
-              <Image alt="" src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+            <div className=" flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-slate-700 dark:shadow-md hover:bg-gray-800 hover:scale-105 duration-1000">
+              <Image alt="" src={web} width={100} height={100} />
+              <h3 className="text-xl font-bold pt-8 pb-2 dark:text-gray-400">
+                Web Applications
               </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs and imlementing
-                design theory.
+              <p className="py-2 dark:text-gray-600">
+                Developing fast and effient web applications to sell or display
+                your content or products on the web.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use.</h4>
-              <p className=" text-gray-800 py-1">Figma</p>
-              <p className=" text-gray-800 py-1">Git & Github</p>
-              <p className=" text-gray-800 py-1">Illuatrator</p>
+              <h4 className="py-4 text-teal-600 dark:text-teal-600">
+                Tools I use...
+              </h4>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                React Js
+              </p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Django</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Next Js</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                Bootstrap
+              </p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                Tailwind CSS
+              </p>
             </div>
-            <div className="flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10">
-              <Image alt="" src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+            <div className=" flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10  dark:shadow-slate-700 dark:shadow-lg hover:bg-gray-800 hover:scale-105 duration-1000">
+              <Image alt="" src={db} width={100} height={100} />
+              <h3 className="text-xl font-bold pt-8 pb-2 dark:text-gray-400">
+                Backend and Databases...
               </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs and imlementing
-                design theory.
+              <p className="py-2 dark:text-gray-600">
+                Optimized data storage and management from the frontend.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use.</h4>
-              <p className=" text-gray-800 py-1">Figma</p>
-              <p className=" text-gray-800 py-1">Git & Github</p>
-              <p className=" text-gray-800 py-1">Illuatrator</p>
+              <h4 className="py-4 text-teal-600 dark:text-teal-600">
+                Tools I use...
+              </h4>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Node Js</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">Python</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                Mongo DB
+              </p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">MySQL</p>
+              <p className=" text-gray-800 py-1  dark:text-gray-600">
+                Postgresql
+              </p>
             </div>
           </div>
         </section>
