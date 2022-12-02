@@ -4,8 +4,10 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillFacebook,
+  AiFillInstagram,
 } from "react-icons/ai";
-import eleli from "../public/dev-ed-wave.png";
+import eleli from "../public/eleli_2.png";
 import Image from "next/image";
 import design from "../public/design.png";
 import code from "../public/code.png";
@@ -18,7 +20,7 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -30,7 +32,9 @@ export default function Home() {
       <main className="bg-white px-10 md:first-letter:px-20 lg:px-40 dark:bg-gray-900">
         <section className="  min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Developed by Ayub</h1>
+            <h1 className="text-xl font-burtons dark:text-yellow-200">
+              Developed by Ayub
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,7 +46,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className=" bg-gradient-to-r from-cyan-500 to-yellow-200 text-white px-4 py-2 rounded-md ml-8"
                   href=""
                 >
                   Resume
@@ -50,25 +54,39 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <Image alt="" src={eleli} layout="fill" objectFit="cover" />
+          </div>
           <div className="text-center p-10">
-            <p>.</p>
+            <p className="text-stone-200">..........</p>
             <h2 className="text-5xl py-2 text-teal-600 font-medium ">
               Eleli Ayub
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl">Full Stack Developer</h3>
-            <p className=" text-md py-5 leading-8 text-gray-800 max-w-lg mx-auto md:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              maxime commodi sit, beatae aspernatur cum blanditiis inventore vel
-              aliquam voluptates!
+            <p className=" text-md py-5 leading-8 text-gray-800 max-w-lg mx-auto md:text-xl dark:text-stone-500">
+              Hello My name is Eleli Ayub, I'm a full stack developer with
+              proficient skills in React-JS, Python-Django, Node-JS, SQL,
+              MongoDB and React Native. I'm a passionate programmer who takes
+              pride in his work and can work well with teams to achieve
+              organizational goals.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
-          </div>
-          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image alt="" src={eleli} layout="fill" objectFit="cover" />
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
+            <a target="_blank" href="https://twitter.com/ALesosio">
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/eleli-ayub-32621221a/"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/eleliayub/">
+              <AiFillFacebook />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/eleliayub/">
+              <AiFillInstagram />
+            </a>
           </div>
         </section>
         <section>
